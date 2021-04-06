@@ -134,7 +134,7 @@ clean_corpus <- function(corpus){
   corpus <- tm_map(corpus, removeWords, "pan")
   return(corpus)
 }
-# Apply your customized function to the tweet_corp: clean_corp
+
 corpus_ing <- clean_corpus(corpus_ing)
 #como se ve ahora el mismo ejemplo anterior pero dsps de pasar por la funcion clean_corp
 corpus_ing[[1]]$content
